@@ -6,7 +6,7 @@ import os         # checking if file exists
 import subprocess # executing program
 
 # set input and output files
-if len(sys.argv) is not 4:
+if len(sys.argv) != 4:
     print("Correct usage: wordCountTest.py <input text file> <output file> <solution key file>")
     exit()
 
