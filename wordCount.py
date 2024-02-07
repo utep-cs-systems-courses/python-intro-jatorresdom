@@ -1,11 +1,10 @@
-#! usr/bin/env python3
+#!/usr/bin/env python3
+
 
 import sys        # command line arguments
 import re         # regular expression tools
 import os         # checking if file exists
 import subprocess # executing program
-
-import re
 
 def count_words(input_file):
     word_counts = {}
