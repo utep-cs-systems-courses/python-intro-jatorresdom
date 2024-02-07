@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 
-
 import sys        # command line arguments
 import re         # regular expression tools
 import os         # checking if file exists
@@ -11,6 +10,8 @@ def count_words(input_file):
     with open(input_file, 'r') as file:
         text = file.read().lower()  # Convert the text to lowercase for consistent processing
 
+#with open closes the file after the loop is done
+        
     # Replace hyphens and apostrophes with spaces
     modified_text = text.replace("-", " ").replace("'", " ")
 
@@ -59,6 +60,8 @@ def main():
     write_output(word_counts, outputFname)
     print(f"Word counts written to {outputFname}")
 
+
+    
 if __name__ == "__main__":
     main()
 
